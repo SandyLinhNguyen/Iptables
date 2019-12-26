@@ -55,7 +55,7 @@ Giới thiệu cơ bản qua các chain như sau:
 Mặc định thì các chain này sẽ không chứa bất kỳ một rule nào, tuy nhiên mỗi chain đều có một policy mặc định nằm ở cuối chain, policy này có thể là ACCEPT hoặc DROP, chỉ khi gói tin đã đi qua hết tất cả các rule ở trên thì gói tin mới gặp policy này
 
 ### Dùng lệnh iptables -L để liệt kê các rules
-![iptables -L](../Iptables/images/iptablesL.png)
+![iptables -L](/images/iptablesL.png)
 
 Các rule là tập điều kiện và hành động tương ứng để xử lý gói tin. Mỗi chain sẽ chứa rất nhiều rule, gói tin được xử lý trong một chain sẽ đowjc so với lần lượt từng rule trong chain này.
 Rule có thể dựa trên protocol, địa chỉ nguồn/đích, port nguồn/đích, card mạng, header gói tin, trạng thái kết nối... Dựa trên những nhiều kiện này, ta có thể tạo ra một tập rule phức tạp để kiểm soát luồng dữ liệu vào ra hệ thống
